@@ -10,6 +10,7 @@ export default () => {
   console.log('useToggle', useToggle());
   const [state, { toggle, setLeft, setRight, set }] = useToggle();
   console.log('value, act', state);
+
   return (
     <div>
       <p>Effects: {`${state}`}</p>

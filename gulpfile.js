@@ -35,7 +35,7 @@ gulp.task('cjs', () => {
 
 // 实现dts:类型声明文件 d.ts
 gulp.task('declaraion', () => {
-  const tsProject = ts.createProject('tsConfig.pro.json', {
+  const tsProject = ts.createProject('tsconfig.pro.json', {
     declaration: true,
     emitDeclarationOnly: true, // 只声明最终打包的产物
   });

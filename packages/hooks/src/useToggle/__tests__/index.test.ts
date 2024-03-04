@@ -34,7 +34,7 @@ describe('useToggle', () => {
     expect(hook.result.current[0]).toBeFalsy();
     console.log('hook.result.current-->', hook.result.current);
     console.log('hook.result.current[0]-->', hook.result.current[0]);
-    console.log('hook.result.current[1]-->', hook.result.current[1]);
+    // console.log('hook.result.current[1]-->', hook.result.current[1]);
 
     // act(() => {
     //   hook.result.current[1].setLeft();

@@ -16,8 +16,8 @@
     "coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "pub": "pnpm run build && pnpm -r --filter=./packages/* publish",
     "pub:beta": "pnpm run build && pnpm -r --filter=./packages/* publish --tag beta",
-    "lxl-fe-lint-scan": "lxl-fe-lint scan",
-    "lxl-fe-lint-fix": "lxl-fe-lint fix"
+    "encode-fe-lint-scan": "encode-fe-lint scan",
+    "encode-fe-lint-fix": "encode-fe-lint fix"
   },
   "keywords": [
     "lxl",
@@ -46,7 +46,7 @@
     "cross-env": "^7.0.3",
     "del": "^5.1.0",
     "dumi": "^1.1.48",
-    "lxl-fe-lint": "^1.0.3",
+    "encode-fe-lint": "^1.0.3",
     "eslint": "^7.2.0",
     "eslint-plugin-react-hooks": "^4.0.8",
     "fast-glob": "^3.2.11",
@@ -78,8 +78,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lxl-fe-lint commit-file-scan",
-      "commit-msg": "lxl-fe-lint commit-msg-scan"
+      "pre-commit": "encode-fe-lint commit-file-scan",
+      "commit-msg": "encode-fe-lint commit-msg-scan"
     }
   }
 }
